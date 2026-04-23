@@ -991,6 +991,185 @@ body.is-east .evidence {
 }
 
 /* ------------------------------------------------------------------
+   Three conditions panel (v2.1)
+   ------------------------------------------------------------------ */
+
+.conditions {
+  margin: 3rem 0 1rem;
+  padding: 2rem;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.conditions-intro {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  max-width: 60ch;
+  margin-bottom: 1.5rem;
+}
+
+.conditions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 820px) {
+  .conditions-list { grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+}
+.conditions-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .9rem;
+  align-items: start;
+  background: var(--cream-deep);
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+}
+.conditions-num {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--red);
+  line-height: 1;
+}
+.conditions-list h4 {
+  margin: 0 0 .35rem;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.conditions-list h4 em { color: var(--red); font-style: italic; }
+.conditions-list p {
+  margin: 0;
+  font-size: .88rem;
+  color: var(--ink-soft);
+  max-width: none;
+  line-height: 1.45;
+}
+
+.conditions-matrix {
+  margin: 2rem 0 1.5rem;
+  background: var(--cream-deep);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: .88rem;
+}
+.matrix-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1.4fr;
+  align-items: center;
+  padding: .7rem .9rem;
+  border-top: 1px solid var(--line);
+}
+.matrix-row:first-child { border-top: 0; }
+.matrix-header {
+  background: rgba(21, 17, 13, .05);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.matrix-label {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.matrix-cell {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.matrix-yes { color: var(--red); }
+.matrix-no { color: var(--muted); opacity: .5; }
+.matrix-outcome {
+  font-size: .82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.matrix-outcome-alert {
+  color: var(--red-deep);
+  font-weight: 600;
+  font-style: normal;
+}
+.matrix-row-target {
+  background: rgba(183, 28, 42, .06);
+}
+@media (max-width: 640px) {
+  .matrix-header { display: none; }
+  .matrix-row {
+    grid-template-columns: 1fr 1fr;
+    gap: .35rem .75rem;
+    padding: 1rem .9rem;
+  }
+  .matrix-label {
+    grid-column: 1 / -1;
+    font-size: 1.05rem;
+    margin-bottom: .25rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .matrix-cell { text-align: center; font-size: 1rem; }
+  .matrix-outcome { grid-column: 1 / -1; margin-top: .35rem; }
+}
+
+.conditions-payoff {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 64ch;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------
+   Chua inversion pull-quote (v2.1)
+   ------------------------------------------------------------------ */
+
+.inversion-pull {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.45;
+  margin: 1.5rem 0 2rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--red);
+  max-width: 48ch;
+}
+
+/* ------------------------------------------------------------------
+   Aphorism + counterfactual (v2.1, Oracle act)
+   ------------------------------------------------------------------ */
+
+.aphorism {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  line-height: 1.2;
+  margin: 2.5rem 0 2rem;
+  max-width: 28ch;
+  letter-spacing: -0.01em;
+}
+.aphorism-ink { color: var(--ink); font-weight: 600; font-style: italic; }
+
+.counterfactual {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.4rem;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.counterfactual em { font-style: normal; font-weight: 600; color: var(--ink); }
+
+/* ------------------------------------------------------------------
    Reduced motion
    ------------------------------------------------------------------ */
 

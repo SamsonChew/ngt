@@ -50,9 +50,18 @@
       <span class="reveal accent">It isn't.</span>
     </h1>
     <p class="lede reveal">
-      A five-minute scroll on why the recommendation feed in your pocket is less like a neutral piece of technology
-      and more like a border, a flag, a claim on your attention made by whichever state happens to own it.
+      A five-minute scroll on why the recommendation feed in your pocket &mdash; the
+      <span class="gloss">
+        <span class="gloss-term">representational layer</span><button class="gloss-btn" aria-expanded="false" aria-label="Define representational layer" data-gloss="rep-layer">ⓘ</button>
+      </span>
+      of your digital life &mdash; is less like a neutral piece of technology and more like a border, a flag, a claim
+      on your attention made by whichever state happens to own it.
     </p>
+    <div class="gloss-popover" data-for="rep-layer" hidden>
+      <strong>Representational layer</strong> &mdash; the part of the tech stack that decides what you <em>see</em>,
+      as distinct from the <em>material layer</em> (chips, servers, cables). Phones and silicon sit in one layer;
+      feeds and algorithms sit in another. States can tolerate foreign control of one without the other &mdash; until they can&rsquo;t.
+    </div>
     <div class="scroll-hint reveal" aria-hidden="true">
       <span>scroll</span>
       <span class="scroll-hint-arrow"></span>
@@ -86,8 +95,17 @@
         </span>.
       </p>
       <div class="gloss-popover" data-for="cultural-power" hidden>
-        The ability to shape what a population finds normal, desirable, or worth arguing about — not by forcing them, but by setting the frame in which their attention moves. Stuart Hall and Edward Said both treat it as <em>constitutive</em>: it makes reality, it doesn't just reflect it.
+        The ability to shape what a population finds normal, desirable, or worth arguing about &mdash; not by forcing them, but by setting the frame in which their attention moves.
       </div>
+
+      <p class="reveal">
+        <strong>Edward Said</strong> argued, decades ago, that no representation of a people or a place is innocent &mdash;
+        it is always produced from a position of power, and the more dominant that power, the more its representation starts
+        to feel like simply objective truth.<sup><a href="#cite-said">8</a></sup>
+        A recommendation algorithm does the same work, at industrial scale. It produces a version of reality that feels
+        personalised and neutral &mdash; but it is shaped by the institutional, commercial, and ultimately political context
+        of whoever designed it.
+      </p>
     </div>
 
     <div class="col-feed" aria-hidden="true">
@@ -175,8 +193,7 @@
           </div>
         </header>
         <p class="compare-body">
-          A maker of smartphones, semiconductors, and telecom equipment used by hundreds of millions
-          of people — including deep inside the United States.
+          <span data-west="Samsung is a maker of smartphones, semiconductors, and telecom equipment used by hundreds of millions of people &mdash; including deep inside the United States. Its hardware runs on American software and sits inside the Western technology alliance." data-east="In 2019, Huawei was the world&rsquo;s largest telecom-equipment maker and on track to overtake Samsung in smartphones. Its 5G infrastructure would have given China structural influence over global telecommunications. The US did not just want Huawei out of America. It wanted Huawei out of the race.">Samsung is a maker of smartphones, semiconductors, and telecom equipment used by hundreds of millions of people &mdash; including deep inside the United States. Its hardware runs on American software and sits inside the Western technology alliance.</span>
         </p>
         <dl class="compare-stats">
           <div><dt>US policy response</dt><dd class="policy" data-west="Trusted partner" data-east="Sanctioned · cut off from chips">Trusted partner</dd></div>
@@ -195,9 +212,89 @@
 
     <p class="compare-caption reveal">
       The technology is structurally identical. The ownership is not.
-      What changes between the two sides of this toggle is not the <em>machine</em> —
+      What changes between the two sides of this toggle is not the <em>machine</em> &mdash;
       it is whose flag flies above it.
     </p>
+
+    <p class="reveal lede-narrow" style="margin-top:2rem;">
+      <strong>Michel-Rolph Trouillot</strong> had a name for this kind of invisibility: the
+      <span class="gloss">
+        <span class="gloss-term">North Atlantic universal</span><button class="gloss-btn" aria-expanded="false" aria-label="Define North Atlantic universal" data-gloss="nau-inline">ⓘ</button>
+      </span>.<sup><a href="#cite-trouillot">9</a></sup>
+      When a particular group&rsquo;s way of doing things becomes so dominant, it stops looking <em>particular</em>.
+      Meta and Google are not seen as American companies making decisions about what billions of people see.
+      They are seen as neutral infrastructure &mdash; just <em>how the internet works</em>.
+      TikTok broke that illusion, not because it did something different, but because it made the assumption visible.
+    </p>
+    <div class="gloss-popover" data-for="nau-inline" hidden>
+      A particular group&rsquo;s practices so dominant they appear universal &mdash; the ground, not a position on it.
+      It takes an outsider achieving the same scale to make the ground visible again.
+    </div>
+
+    <!-- THREE CONDITIONS panel -->
+    <div class="conditions reveal">
+      <p class="conditions-intro">So why <em>this</em> platform? Why not Shein, or WeChat, or Honor phones? Three conditions had to converge:</p>
+
+      <ol class="conditions-list">
+        <li>
+          <span class="conditions-num">01</span>
+          <div>
+            <h4>Operates at the <em>representational</em> layer</h4>
+            <p>Not chips or cables &mdash; the part of the stack that curates what a population sees, believes, desires.</p>
+          </div>
+        </li>
+        <li>
+          <span class="conditions-num">02</span>
+          <div>
+            <h4>Mass penetration inside American borders</h4>
+            <p>Not a diaspora tool, not a niche app. 170 million US users &mdash; roughly half the country.</p>
+          </div>
+        </li>
+        <li>
+          <span class="conditions-num">03</span>
+          <div>
+            <h4>Sits at the centre of the US&ndash;China tech contest</h4>
+            <p>Owned by a firm headquartered in the one state the US is actively competing with for control of the global technological stack.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="conditions-matrix">
+        <div class="matrix-row matrix-header">
+          <span></span>
+          <span>① Representational</span>
+          <span>② Domestic scale</span>
+          <span>③ Adversary state</span>
+          <span>Sovereign crisis?</span>
+        </div>
+        <div class="matrix-row">
+          <span class="matrix-label">Huawei</span>
+          <span class="matrix-cell matrix-no" title="Material layer (hardware)">✗</span>
+          <span class="matrix-cell matrix-no">✗</span>
+          <span class="matrix-cell matrix-yes">✓</span>
+          <span class="matrix-outcome">partial &mdash; sanctioned</span>
+        </div>
+        <div class="matrix-row">
+          <span class="matrix-label">Meta</span>
+          <span class="matrix-cell matrix-yes">✓</span>
+          <span class="matrix-cell matrix-yes">✓</span>
+          <span class="matrix-cell matrix-no">✗</span>
+          <span class="matrix-outcome">no &mdash; regulated</span>
+        </div>
+        <div class="matrix-row matrix-row-target">
+          <span class="matrix-label">TikTok</span>
+          <span class="matrix-cell matrix-yes">✓</span>
+          <span class="matrix-cell matrix-yes">✓</span>
+          <span class="matrix-cell matrix-yes">✓</span>
+          <span class="matrix-outcome matrix-outcome-alert">yes &mdash; forced sale</span>
+        </div>
+      </div>
+
+      <p class="conditions-payoff">
+        All three. Simultaneously. That is the narrow door through which a platform walks to become a
+        <em>sovereignty problem</em> &mdash; and why TikTok is not an outlier but the first case where the door was actually opened.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -216,7 +313,11 @@
       The sociologist <strong>Chua Beng-Huat</strong>, writing about consumerism in Singapore, observed that
       the postcolonial state did not treat cultural imports as threats to be blocked. It treated them as
       <em>material</em> to be permitted and <em>meaning</em> to be curated.<sup><a href="#cite-chua">4</a></sup>
-      The Big Mac crossed the border. The sovereignty over what the Big Mac was <em>for</em> did not.
+    </p>
+    <p class="reveal inversion-pull">
+      The economic import was permitted.<br/>
+      The ideological import was <span class="accent">policed</span>.<br/>
+      The product crossed the border. The sovereignty over its meaning did not.
     </p>
 
     <div class="inversion-split reveal">
@@ -263,7 +364,10 @@
     <p class="eyebrow reveal">Act IV · January 2026</p>
     <h2 id="act-5-title" class="reveal">The deal that revealed the argument.</h2>
     <p class="lede-narrow reveal">
-      When the US finally closed the TikTok deal, look at what it insisted on — and what it didn't.<sup><a href="#cite-oracle-deal">5</a></sup>
+      Most of the public debate was about <em>data</em>. But the data concern, while real, was always a proxy
+      for a deeper anxiety. The real issue was never who <em>holds</em> the data &mdash; it was who controls the
+      <strong>mechanism that produces what people see, think, and desire</strong>. When the deal was finally signed,
+      look at what the US insisted on &mdash; and what it didn&rsquo;t.<sup><a href="#cite-oracle-deal">5</a></sup>
     </p>
 
     <ol class="timeline">
@@ -302,9 +406,21 @@
       <span class="accent">It acquired oversight of it.</span>
     </p>
     <p class="reveal lede-narrow">
-      If algorithms were truly neutral and technical, it wouldn't matter who owned them. The fact that the
-      deal was fought over the algorithm — not the data, not the hardware — is the clearest admission
+      If algorithms were truly neutral and technical, it wouldn&rsquo;t matter who owned them. The fact that the
+      deal was fought over the algorithm &mdash; not the data, not the hardware &mdash; is the clearest admission
       that the algorithm is a political instrument.
+    </p>
+
+    <p class="reveal aphorism">
+      The language was <span class="aphorism-ink">security</span>.<br/>
+      The substance was <span class="accent">sovereignty</span>.
+    </p>
+
+    <p class="reveal lede-narrow counterfactual">
+      And the clinching proof is a counterfactual. Had TikTok remained small &mdash; had it not reached 170 million
+      American users &mdash; the United States would not have bothered. A Chinese-owned algorithm watched by three
+      million people is a curiosity. A Chinese-owned algorithm watched by half the country is a sovereignty problem.
+      The anxiety arose precisely because TikTok <em>succeeded</em>.
     </p>
   </div>
 </section>

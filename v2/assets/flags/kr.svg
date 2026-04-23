@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" role="img" aria-label="Republic of Korea flag">
+  <rect width="60" height="40" fill="#ffffff"/>
+  <g transform="translate(30,20) rotate(-33.69)">
+    <circle r="8" fill="#C60C30"/>
+    <path d="M -8 0 A 8 8 0 0 1 8 0 A 4 4 0 0 1 0 0 A 4 4 0 0 0 -8 0 Z" fill="#003478"/>
+  </g>
+  <g fill="#000" transform="translate(30,20) rotate(-33.69)">
+    <!-- top-left trigram (건 Heaven) -->
+    <g transform="translate(-18,-12)">
+      <rect x="-4" y="-1.1" width="8" height="1.2"/>
+      <rect x="-4" y="-0.1" width="8" height="1.2" transform="translate(0,2)"/>
+      <rect x="-4" y="0.9"  width="8" height="1.2" transform="translate(0,4)"/>
+    </g>
+    <!-- top-right trigram (리 Fire) -->
+    <g transform="translate(18,-12)">
+      <rect x="-4" y="-1.1" width="8" height="1.2"/>
+      <rect x="-4" y="1"  width="3" height="1.2"/><rect x="1" y="1" width="3" height="1.2"/>
+      <rect x="-4" y="3.1"  width="8" height="1.2"/>
+    </g>
+    <!-- bottom-left trigram (감 Water) -->
+    <g transform="translate(-18,12)">
+      <rect x="-4" y="-2.1" width="3" height="1.2"/><rect x="1" y="-2.1" width="3" height="1.2"/>
+      <rect x="-4" y="0"  width="8" height="1.2"/>
+      <rect x="-4" y="2.1" width="3" height="1.2"/><rect x="1" y="2.1" width="3" height="1.2"/>
+    </g>
+    <!-- bottom-right trigram (곤 Earth) -->
+    <g transform="translate(18,12)">
+      <rect x="-4" y="-2.1" width="3" height="1.2"/><rect x="1" y="-2.1" width="3" height="1.2"/>
+      <rect x="-4" y="0"  width="3" height="1.2"/><rect x="1" y="0" width="3" height="1.2"/>
+      <rect x="-4" y="2.1" width="3" height="1.2"/><rect x="1" y="2.1" width="3" height="1.2"/>
+    </g>
+  </g>
+</svg>
